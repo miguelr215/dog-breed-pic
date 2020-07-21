@@ -1,0 +1,44 @@
+/* DOG BREED PIC */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+}
+
+input {
+    display: block;
+}
+
+h1,
+form {
+    text-align: center;
+    margin: 10px;
+}
+
+form input {
+    margin: 10px auto;
+    font-style: italic;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #8a2be2;
+    color: #ffffff;
+}
+
+form input,
+button {
+    font-size: 18px;
+}
+
+img {
+    width: 300px;
+    margin: 20px;
+}
+
+.picBox {
+    text-align: center;
+}
