@@ -10,7 +10,8 @@ function displayResults(responseJson){
 
 // function to get dog pic
 function getDogPic(){
-    breed = $('#breed').val();
+    let userBreed = $('#breed').val();
+    breed = userBreed.split(' ').join('');
     // empty input validation
     if(breed == ''){
         alert('Please enter a breed');
