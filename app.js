@@ -18,7 +18,12 @@ function getDogPic(){
     } else {
     console.log(breed);
     fetch('https://dog.ceo/api/breed/'+ breed +'/images/random')
-        .then(response => response.json())
+        .then(response => {
+            if(response.ok){
+                return response.json();
+            } 
+            throw new Error(response.statusText);
+        })
         .then(responseJson => displayResults(responseJson))
         .catch(error => alert('breed not found or something else bad happened'));
     }
